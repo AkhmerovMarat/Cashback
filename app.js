@@ -18,7 +18,7 @@ if (purchaseAmount <= 1000) {
 } else { (purchaseAmount <= 10000) 
     cashback = purchaseAmount * specialPurchases; 
 } 
-if    (purchaseAmount > 10000) {
+if (purchaseAmount > 10000) {
     cashback = 3000; 
 }
     
