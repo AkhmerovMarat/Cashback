@@ -22,7 +22,7 @@ if (purchaseAmount <= regularPurchases) {
     cashback = purchaseAmount * specialPurchaseRate; 
 } 
 if (cashback >= 3000) {
-    cashback = maxСashback; 
+   cashback = maxСashback; 
 }
     
 console.log(Math.floor(cashback));
