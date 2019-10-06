@@ -4,7 +4,7 @@ console.log('worker')
 // Повышенная категория покупок 1_001 - 5_000  : 5%
 // Спец покупки 5_001-10_000  : 30%
 
-const purchaseAmount = 1000000;
+const purchaseAmount = 154848400;
 const ratioRegularPurchaseOdds = 0.01;
 const ratioIncreasedShoppingCategory = 0.05;
 const specialPurchaseRate = 0.3;
