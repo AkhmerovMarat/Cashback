@@ -4,18 +4,21 @@ console.log('worker')
 // Повышенная категория покупок 1_001 - 5_000  : 5%
 // Спец покупки 5_001-10_000  : 30%
 
-const purchaseAmount = 7550;
-const regularPurchaseOdds = 0.01;
-const increasedShoppingCategory = 0.05;
-const specialPurchases = 0.3;
+const purchaseAmount = 100;
+const ratioRegularPurchaseOdds = 0.01;
+const ratioIncreasedShoppingCategory = 0.05;
+const specialPurchaseRate = 0.3;
+const regularPurchases = 1000;
+const increasedShoppingCategory = 5000;
+const specialPurchases = 10000;
 
 let cashback; 
-if (purchaseAmount <= 1000) {
-    cashback = purchaseAmount * regularPurchaseOdds; 
-} else if (purchaseAmount <= 5000) {
-    cashback = purchaseAmount * increasedShoppingCategory; 
+if (purchaseAmount <= regularPurchases) {
+    cashback = purchaseAmount * ratioRegularPurchaseOdds; 
+} else if (purchaseAmount <= increasedShoppingCategory) {
+    cashback = purchaseAmount * ratioIncreasedShoppingCategory; 
 } else  { 
-    cashback = purchaseAmount * specialPurchases; 
+    cashback = purchaseAmount * specialPurchaseRate; 
 } 
 if (purchaseAmount > 10000) {
     cashback = 3000; 
